@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GAME THEMES</title>
+    <link rel="stylesheet" href="./css/bg-changer.css">
+    <style>
+         .bgmi {
+            background-image: url('./img/bgmi-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover ;
+        }
+
+        .gta {
+            background-image: url('./img/gta-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .assasin {
+            background-image: url('./img/assasin-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .GOW {
+            background-image: url('./img/GOW-bg.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .batman {
+            background-image: url('./img/batman-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+    </style>
+    <script>
+        function bgmi() {
+            document.getElementById("game").src = './img/bgmi.jpg'
+            document.getElementById("container").className = "bgmi"
+        }
+        function gta() {
+            document.getElementById("game").src = './img/gta.jpg'
+            document.getElementById("container").className = "gta"
+        }
+        function assasin() {
+            document.getElementById("game").src = './img/fortnite-assasins-creed-crossover.jpg'
+            document.getElementById("container").className = "assasin"
+        }
+        function GOW() {
+            document.getElementById("game").src = './img/GOW.webp'
+            document.getElementById("container").className = "GOW"
+        }
+        function batman() {
+            document.getElementById("game").src = './img/batman.jpg'
+            document.getElementById("container").className = "batman"
+        }
+        function reset() {
+            document.getElementById("game").src = './img/bgmi.jpg'
+            document.getElementById("container").className = "bgmi"
+        }
+    </script>
+</head>
+
+<body id="container" class="bgmi">
+    <div class="title-father">
+        <div class="title-container">
+            <h2 class="title"><b>GAME STATION</b></h2>
+        </div>
+    </div>
+    <div class="img-container">
+        <img src="./img/bgmi.jpg" id="game" class="img">
+    </div>
+    <div class="btn-container">
+        <button onclick="bgmi()" class="btn">
+            BGMI
+        </button>
+        <button onclick="gta()" class="btn">
+            GTA
+        </button>
+        <button onclick="assasin()" class="btn">
+            ASSASIN
+        </button>
+        <button onclick="GOW()" class="btn">
+            G-Of-W
+        </button>
+        <button onclick="batman()" class="btn">
+            BATMAN
+        </button>
+    </div>
+    <div class="reset-btn-container">
+        <button onclick="alert('Do You Really Want To Reset!!') , reset()" class="reset-btn">Reset</button>
+    </div>
+</body>
+
+</html>
